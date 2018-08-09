@@ -1,0 +1,23 @@
+{
+  "name": "webpack-4-starter",
+  "version": "1.0.0",
+  "description": "Webpack setup for frontend projects",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack --config=config/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavaVuckovic/Webpack-4-Starter.git"
+  },
+  "author": "Sava Vuckovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SavaVuckovic/Webpack-4-Starter/issues"
+  },
+  "homepage": "https://github.com/SavaVuckovic/Webpack-4-Starter#readme",
+  "dependencies": {
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
