@@ -3,6 +3,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -73,6 +74,12 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       template: './src/index.html'
-    })
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new MinifyPlugin()
   ]
 };
