@@ -20,6 +20,7 @@ module.exports = {
       colors: true
     }
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -39,6 +40,9 @@ module.exports = {
           },
           {
             loader: 'css-loader'
+          },
+          {
+            loader: 'postcss-loader'
           },
           {
             loader: "sass-loader"
