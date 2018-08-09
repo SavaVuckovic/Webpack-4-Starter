@@ -12,7 +12,7 @@ module.exports = {
   output: {
     filename: '[name]-bundle.js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    publicPath: ''
   },
   module: {
     rules: [
@@ -68,7 +68,9 @@ module.exports = {
   },
   plugins: [
     new OptimizeCSSAssetsPlugin(),
-    new MiniCSSExtractPlugin(),
+    new MiniCSSExtractPlugin({
+      filename: '[name]-[contenthash].css'
+    }),
     new HTMLWebpackPlugin({
       template: './src/index.html'
     })

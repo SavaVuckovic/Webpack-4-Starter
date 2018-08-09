@@ -23,4 +23,4 @@ server.use(staticMiddleware);
 
 // start the server
 const PORT = process.env.PORT || 8000;
-server.listen(PORT, () => `Development server started on port ${PORT}`);
+server.listen(PORT, () => console.log(`Development server started on port ${PORT}`));
