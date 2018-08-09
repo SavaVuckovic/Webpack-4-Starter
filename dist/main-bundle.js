@@ -148,7 +148,8 @@ eval("module.exports = __webpack_require__.p + \"index.html\";\n\n//# sourceURL=
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ../scss/index.scss */ \"./src/scss/index.scss\");\n__webpack_require__(/*! ../index.html */ \"./src/index.html\");\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+"use strict";
+eval("\n\n__webpack_require__(/*! ../scss/index.scss */ \"./src/scss/index.scss\");\n\n__webpack_require__(/*! ../index.html */ \"./src/index.html\");\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

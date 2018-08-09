@@ -1,2 +1,2 @@
-require('../scss/index.scss');
-require('../index.html');
+import '../scss/index.scss';
+import '../index.html';
